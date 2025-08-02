@@ -76,12 +76,12 @@ $web = parse_ini_file(FCPATH . '.env');
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => $web['hostname'],
-	'username' => $web['username'],
-	'password' => $web['password'],
-	'database' => $web['database'],
+	'hostname' => 'localhost',
+	'username' => 'u858331583_skripsi',
+	'password' => '',
+	'database' => 'u858331583_skripsi',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
+	'dbprefix' => 'cY9j/yMN$',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
@@ -95,3 +95,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
