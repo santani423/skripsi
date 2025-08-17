@@ -10,95 +10,95 @@ class Home extends MY_Controller
         date_default_timezone_set('Asia/Jakarta');
     }
 
-    // public function index()
-    // {
-    //     $template = $this->db->get('home_template')->result();
+    public function index()
+    {
+        $template = $this->db->get('home_template')->result();
 
-    //     // Head
-    //     $data['page_title'] = '';
+        // Head
+        $data['page_title'] = '';
 
-    //     // Carousel
-    //     $data['carousel_bg1'] = '';
-    //     $data['carousel_subtitle1'] = '';
-    //     $data['carousel_title1'] = '';
-    //     $data['carousel_description1'] = '';
-    //     $data['carousel_btn_href1'] = '';
-    //     $data['carousel_btn_text1'] = '';
+        // Carousel
+        $data['carousel_bg1'] = '';
+        $data['carousel_subtitle1'] = '';
+        $data['carousel_title1'] = '';
+        $data['carousel_description1'] = '';
+        $data['carousel_btn_href1'] = '';
+        $data['carousel_btn_text1'] = '';
 
-    //     $data['carousel_bg2'] = '';
-    //     $data['carousel_subtitle2'] = '';
-    //     $data['carousel_title2'] = '';
-    //     $data['carousel_description2'] = '';
-    //     $data['carousel_btn_href2'] = '';
-    //     $data['carousel_btn_text2'] = '';
+        $data['carousel_bg2'] = '';
+        $data['carousel_subtitle2'] = '';
+        $data['carousel_title2'] = '';
+        $data['carousel_description2'] = '';
+        $data['carousel_btn_href2'] = '';
+        $data['carousel_btn_text2'] = '';
 
-    //     $data['carousel_bg3'] = '';
-    //     $data['carousel_subtitle3'] = '';
-    //     $data['carousel_title3'] = '';
-    //     $data['carousel_description3'] = '';
-    //     $data['carousel_btn_href3'] = '';
-    //     $data['carousel_btn_text3'] = '';
-    //     // End Carousel
+        $data['carousel_bg3'] = '';
+        $data['carousel_subtitle3'] = '';
+        $data['carousel_title3'] = '';
+        $data['carousel_description3'] = '';
+        $data['carousel_btn_href3'] = '';
+        $data['carousel_btn_text3'] = '';
+        // End Carousel
 
-    //     // Tentang Kami
-    //     $data['tentang_kami_subtitle'] = '';
-    //     $data['tentang_kami_isi'] = '';
-    //     // End Tentang Kami
+        // Tentang Kami
+        $data['tentang_kami_subtitle'] = '';
+        $data['tentang_kami_isi'] = '';
+        // End Tentang Kami
 
-    //     // Kontak
-    //     $data['social_description'] = '';
-    //     $data['link_fb'] = '';
-    //     $data['link_twitter'] = '';
-    //     $data['alamat'] = '';
-    //     $data['phone'] = '';
-    //     $data['email'] = '';
-    //     $data['kotak_subtitle'] = '';
-    //     // End Kontak
+        // Kontak
+        $data['social_description'] = '';
+        $data['link_fb'] = '';
+        $data['link_twitter'] = '';
+        $data['alamat'] = '';
+        $data['phone'] = '';
+        $data['email'] = '';
+        $data['kotak_subtitle'] = '';
+        // End Kontak
 
-    //     foreach ($template as $item) {
-    //         // Head
-    //         $data['page_title'] = $item->page_title;
+        foreach ($template as $item) {
+            // Head
+            $data['page_title'] = $item->page_title;
 
-    //         // Carousel
-    //         $data['carousel_bg1'] = $item->carousel_bg1;
-    //         $data['carousel_subtitle1'] = $item->carousel_subtitle1;
-    //         $data['carousel_title1'] = $item->carousel_title1;
-    //         $data['carousel_description1'] = $item->carousel_description1;
-    //         $data['carousel_btn_href1'] = $item->carousel_btn_href1;
-    //         $data['carousel_btn_text1'] = $item->carousel_btn_text1;
+            // Carousel
+            $data['carousel_bg1'] = $item->carousel_bg1;
+            $data['carousel_subtitle1'] = $item->carousel_subtitle1;
+            $data['carousel_title1'] = $item->carousel_title1;
+            $data['carousel_description1'] = $item->carousel_description1;
+            $data['carousel_btn_href1'] = $item->carousel_btn_href1;
+            $data['carousel_btn_text1'] = $item->carousel_btn_text1;
 
-    //         $data['carousel_bg2'] = $item->carousel_bg2;
-    //         $data['carousel_subtitle2'] = $item->carousel_subtitle2;
-    //         $data['carousel_title2'] = $item->carousel_title2;
-    //         $data['carousel_description2'] = $item->carousel_description2;
-    //         $data['carousel_btn_href2'] = $item->carousel_btn_href2;
-    //         $data['carousel_btn_text2'] = $item->carousel_btn_text2;
+            $data['carousel_bg2'] = $item->carousel_bg2;
+            $data['carousel_subtitle2'] = $item->carousel_subtitle2;
+            $data['carousel_title2'] = $item->carousel_title2;
+            $data['carousel_description2'] = $item->carousel_description2;
+            $data['carousel_btn_href2'] = $item->carousel_btn_href2;
+            $data['carousel_btn_text2'] = $item->carousel_btn_text2;
 
-    //         $data['carousel_bg3'] = $item->carousel_bg3;
-    //         $data['carousel_subtitle3'] = $item->carousel_subtitle3;
-    //         $data['carousel_title3'] = $item->carousel_title3;
-    //         $data['carousel_description3'] = $item->carousel_description3;
-    //         $data['carousel_btn_href3'] = $item->carousel_btn_href3;
-    //         $data['carousel_btn_text3'] = $item->carousel_btn_text3;
-    //         // End Carousel
+            $data['carousel_bg3'] = $item->carousel_bg3;
+            $data['carousel_subtitle3'] = $item->carousel_subtitle3;
+            $data['carousel_title3'] = $item->carousel_title3;
+            $data['carousel_description3'] = $item->carousel_description3;
+            $data['carousel_btn_href3'] = $item->carousel_btn_href3;
+            $data['carousel_btn_text3'] = $item->carousel_btn_text3;
+            // End Carousel
 
-    //         // Tentang Kami
-    //         $data['tentang_kami_subtitle'] = $item->tentang_kami_subtitle;
-    //         $data['tentang_kami_isi'] = $item->tentang_kami_isi;
-    //         // End Tentang Kami
+            // Tentang Kami
+            $data['tentang_kami_subtitle'] = $item->tentang_kami_subtitle;
+            $data['tentang_kami_isi'] = $item->tentang_kami_isi;
+            // End Tentang Kami
 
-    //         // Kontak
-    //         $data['social_description'] = $item->social_description;
-    //         $data['link_fb'] = $item->link_fb;
-    //         $data['link_twitter'] = $item->link_twitter;
-    //         $data['alamat'] = $item->alamat;
-    //         $data['phone'] = $item->phone;
-    //         $data['email'] = $item->email;
-    //         $data['kontak_subtitle'] = $item->kontak_subtitle;
-    //         // End Kontak
-    //     }
-    //     $this->load->view('home/index', $data);
-    // }
+            // Kontak
+            $data['social_description'] = $item->social_description;
+            $data['link_fb'] = $item->link_fb;
+            $data['link_twitter'] = $item->link_twitter;
+            $data['alamat'] = $item->alamat;
+            $data['phone'] = $item->phone;
+            $data['email'] = $item->email;
+            $data['kontak_subtitle'] = $item->kontak_subtitle;
+            // End Kontak
+        }
+        $this->load->view('home/index', $data);
+    }
 
     // public function registrasi()
     // {
