@@ -34,7 +34,6 @@ class Mahasiswa_model extends CI_Model
             }
             $hasil['data'][$key]['hk3'] = $this->db->get_where('hasil_kegiatan', ['hasil_kegiatan.mahasiswa_id' => $item['id']])->num_rows();
             $hasil['data'][$key]['skripsi'] = $this->db->get_where('skripsi', ['skripsi.mahasiswa_id' => $item['id']])->num_rows();
-
         }
 
         return $hasil;
@@ -298,7 +297,7 @@ class Mahasiswa_model extends CI_Model
                 'data' => $mahasiswa
             ];
             $hasil['data']['proposal'] = $this->db->get_where('proposal_mahasiswa', ['proposal_mahasiswa.mahasiswa_id' => $hasil['data']['id']])->result_array();
-            
+
             $prodi = $this->db->get_where('prodi', ['prodi.id' => $hasil['data']['prodi_id']])->row_array();
             $prodi['fakultas'] = $this->db->get_where('fakultas', ['fakultas.id' => $prodi['fakultas_id']])->row_array();
             $hasil['data']['prodi'] = $prodi;
@@ -361,6 +360,7 @@ class Mahasiswa_model extends CI_Model
 
             if ($validation === true) {
                 if (password_verify($input['password'], $mahasiswa['password'])) {
+                  
                     $hasil = [
                         'error' => false,
                         'message' => "berhasil login",
