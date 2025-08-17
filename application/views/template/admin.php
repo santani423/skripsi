@@ -37,85 +37,85 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/dashboard">
-                <i class="ni ni-tv-2 text-primary"></i>
+                <!-- <i class="ni ni-tv-2 text-primary"></i> -->
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>home-template">
-                <i class="fa fa-edit text-warning"></i>
+                <!-- <i class="fa fa-edit text-warning"></i> -->
                 <span class="nav-link-text">Website</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/fakultas">
-                <i class="fa fa-building text-primary"></i>
+                <!-- <i class="fa fa-building text-primary"></i> -->
                 <span class="nav-link-text">Fakultas</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/prodi">
-                <i class="fa fa-map text-green"></i>
+                <!-- <i class="fa fa-map text-green"></i> -->
                 <span class="nav-link-text">Prodi</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/dosen">
-                <i class="fa fa-user-tie text-purple"></i>
+                <!-- <i class="fa fa-user-tie text-purple"></i> -->
                 <span class="nav-link-text">Dosen</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/mahasiswa">
-                <i class="fa fa-users text-warning"></i>
+                <!-- <i class="fa fa-users text-warning"></i> -->
                 <span class="nav-link-text">Mahasiswa</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/proposal">
-                <i class="ni ni-app text-red"></i>
+                <!-- <i class="ni ni-app text-red"></i> -->
                 <span class="nav-link-text">Usulan Proposal</span>
               </a>
             </li>
-            <!-- <li class="nav-item">
+         <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/konsultasi">
-                <i class="ni ni-pin-3 text-success"></i>
+                   <!--  <i class="ni ni-pin-3 text-success"></i> -->
                 <span class="nav-link-text">Konsultasi</span>
               </a>
-            </li> -->
+            </li>  
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/seminar">
-                <i class="ni ni-books text-danger"></i>
+                <!-- <i class="ni ni-books text-danger"></i> -->
                 <span class="nav-link-text">Seminar Proposal</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/penelitian">
-                <i class="ni ni-bulb-61 text-purple"></i>
+                <!-- <i class="ni ni-bulb-61 text-purple"></i> -->
                 <span class="nav-link-text">Seminar Hasil Penelitian</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/skripsi">
-                <i class="fa fa-list text-primary"></i>
+                <!-- <i class="fa fa-list text-primary"></i> -->
                 <span class="nav-link-text">Seminar Akhir / Skripsi</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/hasilkegiatan">
-                <i class="fa fa-crown text-warning"></i>
+                <!-- <i class="fa fa-crown text-warning"></i> -->
                 <span class="nav-link-text">HK3</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/report">
-                <i class="fa fa-book-open text-danger"></i>
+                <!-- <i class="fa fa-book-open text-danger"></i> -->
                 <span class="nav-link-text">Report</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>admin/pengaturan">
-                <i class="fa fa-cog text-success"></i>
+                <!-- <i class="fa fa-cog text-success"></i> -->
                 <span class="nav-link-text">Pengaturan</span>
               </a>
             </li>
@@ -131,7 +131,7 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
-          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+          <!-- <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
             <div class="form-group mb-0">
               <div class="input-group input-group-alternative input-group-merge">
                 <div class="input-group-prepend">
@@ -143,7 +143,7 @@
             <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
-          </form>
+          </form> -->
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-md-auto ">
             <li class="nav-item d-xl-none">

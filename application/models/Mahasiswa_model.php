@@ -58,8 +58,9 @@ class Mahasiswa_model extends CI_Model
             'password' => $input['password'] ? password_hash($input['password'], PASSWORD_DEFAULT) : ''
         ];
 
+        
         $validate = $this->app->validate($data);
-
+        
         if ($validate === true) {
             $cek = $this->db->get_where($this->table, ['mahasiswa.nim' => $data['nim']])->num_rows();
             if ($cek > 0) {
@@ -85,9 +86,9 @@ class Mahasiswa_model extends CI_Model
                         <li>Password &nbsp;&nbsp;&nbsp; : ' . $input['password'] . ' </li>
                     </ul>
                     ';
-
+                    
                     $data_id = $this->db->insert_id();
-
+                    
                     $hasil = [
                         'error' => false,
                         'message' => "data berhasil disimpan",
@@ -99,6 +100,7 @@ class Mahasiswa_model extends CI_Model
         } else {
             $hasil = $validate;
         }
+        
 
         return $hasil;
     }

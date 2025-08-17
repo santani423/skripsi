@@ -36,45 +36,45 @@ foreach ($dataUser as $du) {
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>mahasiswa/dashboard">
-                <i class="ni ni-tv-2 text-primary"></i>
+                <!-- <i class="ni ni-tv-2 text-primary"></i> -->
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <?php if ($verifikasi == 1) { ?>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/proposal">
-                  <i class="ni ni-app text-warning"></i>
-                  <span class="nav-link-text">Usulan Proposal</span>
+                  <!-- <i class="ni ni-app text-warning"></i> -->
+                  <span class="nav-link-text">Usulan Proposasssl</span>
                 </a>
               </li>
               <li class="nav-item">
               <a class="nav-link" href="<?= base_url() ?>mahasiswa/konsultasi">
-                <i class="ni ni-pin-3 text-success"></i>
+                <!-- <i class="ni ni-pin-3 text-success"></i> -->
                 <span class="nav-link-text">Bimbingan</span>
               </a>
             </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/seminar">
-                  <i class="ni ni-books text-danger"></i>
+                  <!-- <i class="ni ni-books text-danger"></i> -->
                   <span class="nav-link-text">Seminar Proposal</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/penelitian">
-                  <i class="ni ni-bulb-61 text-purple"></i>
+                  <!-- <i class="ni ni-bulb-61 text-purple"></i> -->
                   <span class="nav-link-text">Seminar Hasil Penelitian</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/skripsi">
-                  <i class="fa fa-list text-primary"></i>
+                  <!-- <i class="fa fa-list text-primary"></i> -->
                   <span class="nav-link-text">Seminar Akhir / Skripsi</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/hasilkegiatan">
-                  <i class="fa fa-crown text-warning"></i>
-                  <span class="nav-link-text">HK3</span>
+                  <!-- <i class="fa fa-crown text-warning"></i> -->
+                  <span class="nav-link-text">Hasil Kegiatan</span>
                 </a>
               </li> 
             <?php } ?>
@@ -90,7 +90,7 @@ foreach ($dataUser as $du) {
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
-          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+          <!-- <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
             <div class="form-group mb-0">
               <div class="input-group input-group-alternative input-group-merge">
                 <div class="input-group-prepend">
@@ -102,7 +102,7 @@ foreach ($dataUser as $du) {
             <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
-          </form>
+          </form> -->
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-md-auto ">
             <li class="nav-item d-xl-none">

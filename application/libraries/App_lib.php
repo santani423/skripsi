@@ -34,7 +34,7 @@ class App_lib
             if (empty($item)) {
                 $hasil = [
                     'error' => true,
-                    'message' => "parameter '$field' harus diset"
+                    'message' => "parameter '$field' harus diset!"
                 ];
                 goto output;
             }
