@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-// komen
+
 class Home extends MY_Controller
 {
 
