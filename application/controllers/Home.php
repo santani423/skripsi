@@ -114,7 +114,7 @@ class Home extends MY_Controller
     {
         $template = $this->db->get('home_template')->result();
 
-        // Head
+        // Head-
         $data['page_title'] = '';
         $data['id'] = '';
 
