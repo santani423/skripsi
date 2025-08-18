@@ -25,8 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $http = isset($_SERVER['HTTPS']) ? "https://" : "http://";
 $url = str_replace("index.php", "", $_SERVER['SCRIPT_NAME']);
-$config['base_url'] = $http . $_SERVER['SERVER_NAME'] . $url;
-// $config['base_url'] = "http://localhost:5000";
+// $config['base_url'] = $http . $_SERVER['SERVER_NAME'] . $url;
+$config['base_url'] = "https://skripsi.undesisa.com/";
 
 /*
 |--------------------------------------------------------------------------

@@ -1,25 +1,8 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # Hilangkan akses ke .env dan file sensitif
-    <FilesMatch "^\.env">
-        Order allow,deny
-        Deny from all
-    </FilesMatch>
-
-    <FilesMatch "(composer\.(json|lock)|artisan|\.gitignore|.git|_ide_helper\.php)">
-        Order allow,deny
-        Deny from all
-    </FilesMatch>
-
-    # Jika file atau folder tidak ada, arahkan ke index.php
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php/$1 [L]
-</IfModule>
-
-# Disable directory listing
+RewriteEngine On
 Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # This domain inherits the “PHP” package.
